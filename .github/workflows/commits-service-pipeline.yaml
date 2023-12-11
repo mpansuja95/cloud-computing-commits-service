@@ -36,7 +36,7 @@ jobs:
           sudo apt-get update && sudo apt-get install -y kubectl
       
       - name: Verify Google Cloud SDK installation
-          run: gcloud version
+        run: gcloud version
 
       - name: Setup Google CLoud CLI
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@0.1.3
