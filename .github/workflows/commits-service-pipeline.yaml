@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: '20.10.0'
 
-      - name: Install Dependencies
+      - name: Install Node Dependencies
         run: npm install  
 
       - name: Setup Google CLoud CLI
