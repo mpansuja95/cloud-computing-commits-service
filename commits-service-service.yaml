@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: commits-service-service
+spec:
+  selector:
+    app: commits-service
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8085
+  type: LoadBalancer
