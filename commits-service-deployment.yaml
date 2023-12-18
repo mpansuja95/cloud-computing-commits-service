@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: commits-service-container
-        image: mpansuja/cloud-computing-images:commits.0.2.0
+        image: gcr.io/PROJECT_ID/IMAGE:TAG
+        imagePullPolicy: Always
         ports:
         - containerPort: 8085
         env:
